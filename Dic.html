@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dictionary</title>
+</head>
+<body>
+
+	<?php
+
+		//How many words this dictionary contains?
+		$string = file_get_contents("dictionnaire.txt", FILE_USE_INCLUDE_PATH);
+		$dico = explode("\n", $string);
+		echo "The dictionary contains: <br> "; count($dico);
+
+
+	?>
+
+
+</body>
+</html>
